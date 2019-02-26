@@ -35,7 +35,16 @@ public class TestLambda {
 		
 		System.out.println("-----------------------------");
 		
-		Runnable r2 = ()->System.out.println("hello lambda!!!");
+		Runnable r2 = ()->{
+			System.out.println("hello lambda!!!");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("hello lambda!!!");
+		};
 		Thread t2 = new Thread(r2);
 		t2.start();
 	}
