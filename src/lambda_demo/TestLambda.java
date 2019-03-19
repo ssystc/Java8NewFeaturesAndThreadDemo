@@ -28,6 +28,8 @@ import java.util.function.Consumer;
  *  	2、共给型接口：Supplier<T>{T get();}
  *  	3、函数型接口：Function<T, R>{R apply(T t);}		//(和Practice里我们自己写的MyFunction完全一样有木有)
  *  	4、断言型接口：Predicate<T>{boolean test(T t);}
+ *  
+ *  lambda的方法引用：
  */	
 
 public class TestLambda {
@@ -83,6 +85,8 @@ public class TestLambda {
 		};
 		System.out.println(com.compare(1, 2));
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		
